@@ -1,11 +1,12 @@
 ## Getting Started
 Install expo on your smartphone and run the following command
 
-<a href="https://expo.dev/@darunia/championslist">Expo go link</a>
 ```
 npm install
 npm start
 ```
+
+<a href="https://expo.dev/@darunia/championslist">Or expo go link</a>
 
 ## Presentation 
 Design from Trolais Benjamin <a href="https://github.com/BenjaminFalcon27/LOL-ApiCall-ReactNative">here</a>
