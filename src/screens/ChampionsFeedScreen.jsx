@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { SafeAreaView, StyleSheet, FlatList, Text, View, TextInput} from "react-native";
 import { CardChampion } from "../components/Card";
 import { championsData } from "../hooks/ChampionsData";
