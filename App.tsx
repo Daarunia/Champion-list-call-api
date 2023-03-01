@@ -1,6 +1,7 @@
 import React from 'react';
+import { View } from "react-native";
 import { ChampionsFeedScreen } from './src/screens/ChampionsFeedScreen';
-import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 
@@ -8,21 +9,20 @@ const queryClient = new QueryClient();
 
 const App = () => {
   return (
-    <QueryClientProvider client={queryClient}>
-      <NavigationContainer>
-        <ChampionsFeedScreen />
-      </NavigationContainer>
-    </QueryClientProvider>
-
+    <View style={styles.container}>
+      <QueryClientProvider client={queryClient}>
+        <NavigationContainer>
+          <ChampionsFeedScreen />
+        </NavigationContainer>
+      </QueryClientProvider>
+    </View>
   );
 };
 
 const styles = {
   container: {
-    flex: 1,
-    backgroundColor: '#5372ac',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#0A1428',
+    height: '100%',
   },
 };
 

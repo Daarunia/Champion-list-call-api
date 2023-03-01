@@ -13,10 +13,7 @@ interface Props {
 
 export const CardChampion = ({ item }: Props) => {
 
-  const championPicture =
-    `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/` +
-    item.id +
-    `_0.jpg`;
+  const championPicture = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/` + item.id + `_0.jpg`;
 
   return (
     <Card style={styles.container}>
